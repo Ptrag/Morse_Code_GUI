@@ -15,9 +15,14 @@ import java.awt.Color;
 
 public class MorseCodeGUI extends JPanel{
 					
-	public static final String[] LETTERS = {"A" , "B" , "C" , "D" , "E" , "F" , "G" , "H" , "I" , "J" , "K" , "L" , "M" , "N" , "O" , "P" , "Q" , "R" , "S" , "T" , "U" , "V" , "W" , "X" , "Y" , "Z" , " " , "0" , "1" , "2" , "3" , "4" , "5" , "6" , "7" , "8" , "9" , "," , "." , "?"};
+	public static final String[] LETTERS = {"A" , "B" , "C" , "D" , "E" , "F" , "G" , "H" , "I" , "J" , "K" , "L" , "M" , "N" , 
+			"O" , "P" , "Q" , "R" , "S" , "T" , "U" , "V" , "W" , "X" , "Y" , "Z" , " " , "0" , "1" , "2" , "3" , "4" , "5" , 
+			"6" , "7" , "8" , "9" , "," , "." , "?"};
 	
-	public static final String[] LETTERS_TO_MORSE = { "/" , "--..--" , ".-.-.-" , "-----" , ".----" , "..---" , "...--" , "....-" , "....." , "-...." , "--..." , "---.." , "----." , "..--.." , ".-" , "-..." ,  "-.-." , "-.." , "." , "..-." , "--." , "...." , ".." , ".---" , "-.-" , ".-.." , "--" , "-." , "---" , ".--." , "--.-" , ".-." , "..." , "-" , "..-" ,  "...-" , ".--" , "-..-" , "-.--" , "--.." };
+	public static final String[] LETTERS_TO_MORSE = { "/" , "--..--" , ".-.-.-" , "-----" , ".----" , "..---" , "...--" , 
+			"....-" , "....." , "-...." , "--..." , "---.." , "----." , "..--.." , ".-" , "-..." ,  "-.-." , "-.." , "." , 
+			"..-." , "--." , "...." , ".." , ".---" , "-.-" , ".-.." , "--" , "-." , "---" , ".--." , "--.-" , ".-." , 
+			"..." , "-" , "..-" ,  "...-" , ".--" , "-..-" , "-.--" , "--.." };
 	
 	private JLabel lblOutput;
 	private JLabel lblInputText;
@@ -48,7 +53,7 @@ public class MorseCodeGUI extends JPanel{
 	
 	public MorseCodeGUI() {
 		setBackground(Color.LIGHT_GRAY);
-		setBorder(new TitledBorder(null, "", TitledBorder.LEADING, TitledBorder.TOP, null, null));					//constructor
+		setBorder(new TitledBorder(null, "", TitledBorder.LEADING, TitledBorder.TOP, null, null));					
 		setLayout(null);
 		
 		JLabel lblTextToMorse = new JLabel("Text to morse translator!");
