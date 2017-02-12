@@ -28,7 +28,6 @@ public class MorseCodeGUI extends JPanel{
 	private JLabel lblInputText;
 	private JTextArea txtIn;
 	private JTextArea txtOut;
-	
 	public String morseTranslator(String txtInput) {
 		
 		//sorts array LETTERS to user binary search
@@ -38,7 +37,6 @@ public class MorseCodeGUI extends JPanel{
 		{
 			String item = Character.toString(txtInput.toUpperCase().charAt(i));
 			
-			//check for exceptions
 			try{									
 				int location = Arrays.binarySearch( LETTERS, item);
 				output = output + LETTERS_TO_MORSE[location] + " ";
@@ -75,13 +73,9 @@ public class MorseCodeGUI extends JPanel{
 		btnTranslate.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				
-				//geting text from txtIn filed
+				//Getting text from txtIn filed and outputting it on the screen
 				String message = txtIn.getText();
-				
-				//changing the message to morse
 				String outupt = morseTranslator(message);
-				
-				//outputing morse on screen
 				txtOut.setText(outupt);
 				
 			}
